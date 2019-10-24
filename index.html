@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+        <!--------------------------------- Navbar --------------------------------->
+
+    <div class="nav-bar" id="myDIV">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <ul class="big-navbar">
+                <li><a href="index.html" id="nav-hover" class="btnzade">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn btnzade" id="nav-hover">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="directors.html">Board of Directors</a>
+                            <a href="mission.html">Our Mission</a>
+                            <a href="memorial.html">Memorial</a>
+                        </div>
+                </li>
+                <li><a href="programs.html" id="nav-hover" class="btnzade">Programs</a></li>              
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn btnzade" id="nav-hover">Get Involved</a>
+                        <div class="dropdown-content">
+                            <a href="donate.html">Donate</a>
+                            <a href="volunteer.html">Volunteer</a>
+                        </div>
+                </li>
+                <li><a href="contact.html" id="nav-hover" class="btnzade">Contact Us</a></li>
+            </ul>
+
+        <!--------------------------------- Search Big Screen --------------------------------->
+
+        <form class="search-form" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+            <a href="https://paypal.com"><button id="donate-btn">DONATE</button></a>
+    </div>
+
+        <!--------------------------------- Navbar Small Screen --------------------------------->
+    
+            <nav class="navigation" id="navigation">
+                    <ul class="mainmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="directors.html">Board of Directors</a></li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="memorial.html">Memorial</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="programs.html">Programs</a>
+                        <li><a href="">Get Involver</a>
+                            <ul class="submenu">
+                                <li><a href="donate.html">Donate</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+        <!--------------------------------- Slider --------------------------------->
+
+        <div class="slider">
+                <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/slide-one.jpg" class="d-block w-100" id="thatlogo">
+                        <div class="posht" >
+                            <img src="images/logo.png" class="thislogo" />
+                        </div>    
+                        <p class="slider-image-text">Our Story</p>
+                        <a href="ourstory.html"><button class="slider-image-button">learn more</button></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide-two.jpg" class="d-block w-100">
+                        <div class="posht" >
+                            <img src="images/logo.png" class="thislogo" />
+                        </div>    
+                        <p class="slider-image-text">Enrichment Programs</p>
+                        <a href="enrichment.html"><button class="slider-image-button">learn more</button></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide-three.jpg" class="d-block w-100">
+                        <div class="posht" >
+                            <img src="images/logo.png" class="thislogo" />
+                        </div>    
+                        <p class="slider-image-text">Sports Programs</p>
+                        <a href="sports.html"><button class="slider-image-button">learn more</button></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide-four.jpg" class="d-block w-100">
+                        <div class="posht" >
+                            <img src="images/logo.png" class="thislogo" />
+                        </div>    
+                        <p class="slider-image-text">Social Programs</p>
+                        <a href="social.html"><button class="slider-image-button">learn more</button></a>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slide-five.jpg" class="d-block w-100">
+                        <div class="posht" >
+                            <img src="images/logo.png" class="thislogo" />
+                        </div>    
+                        <p class="slider-image-text">Fundraising</p>
+                        <a href="fundraising.html"><button class="slider-image-button">learn more</button></a>
+                      </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                        <li data-target="#slider" data-slide-to="3"></li>
+                        <li data-target="#slider" data-slide-to="4"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            
+
+        <!-------------------------------- Our Mission ------------------------------->
+
+        <div class="mission">
+            <d>our mission</d>
+            <div class="mission-top-text">
+                <p>Our mission is to provide Resources Education Activities Community participation and Housing opportunities that will enable adults with 
+                developmental challenges to approximate the pattern of everyday living available to people without disabilities.</p>
+            </div>    
+            <div class="mission-container">
+                <div class="mission-icon-container">
+                    <p class="icon-headline">sports</p>
+                    <img src="images/icon1.png">
+                    <p class="icon-text">R.E.A.C.H. West provides the coordination and support to the 
+                        East Bay Buffaloes, one of the largest teams in Special Olympics Northern California</p>
+                    <a href="sports.html"><button class="icon-button">learn more</button></a>    
+                </div>    
+                <div class="mission-icon-container">
+                    <p class="icon-headline">education</p>
+                    <img src="images/icon2new.png">
+                    <p class="icon-text">R.E.A.C.H. West provides training to parents, community partners and 
+                    developmentally disabled community in West Costa and Northern Alameda counties</p>
+                    <a href="education.html"><button class="icon-button">learn more</button></a>
+                </div>    
+                <div class="mission-icon-container">
+                    <p class="icon-headline">enrichment</p>
+                    <img src="images/icon3.png">
+                    <p class="icon-text">Our Enrichment Programs are designed to develop skills for both personal growth 
+                        and community enhancement. R.E.A.C.H. prides itself in giving back to the community</p>
+                    <a href="enrichment.html"><button class="icon-button">learn more</button></a>    
+                </div>    
+            </div>    
+
+        </div>
+
+    
+        <!-------------------------------- Get Involved ------------------------------->
+
+        <div class="involve">
+            <span>get involved</span>
+            <p id="involve-statement">Volunteer with us!</p>
+            <table class="involve-table">
+                <tr>
+                    <td>
+                        <div class="involve-container">
+                            <img src="images/involve-one.png">
+                            <h6>Coach</h6>
+                            <p>Train our athletes</p><br>
+                            <button class="hvr-shutter-out-vertical">sign up</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="involve-container">
+                            <img src="images/involve-one.png">
+                            <h6>Join the Board</h6>
+                            <p>Make a difference with your special talents</p>
+                            <button class="hvr-shutter-out-vertical">join us</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="involve-container">
+                            <img src="images/involve-one.png">
+                            <h6>Volunteer</h6>
+                            <p>Give and receive the gift of joy</p><br>
+                            <a href="volunteer.html"><button class="hvr-shutter-out-vertical">start</button>
+                        </div>
+                    </td>    
+                    <td>
+                        <div class="involve-container">
+                            <img src="images/involve-one.png">
+                            <h6>Donate</h6>
+                            <p>Help us enrich more lives</p><br>
+                            <a href="donate.html"><button class="hvr-shutter-out-vertical">donate</button></a>
+                        </div>
+                    </td>    
+                </tr>
+            </table>
+        </div>
+
+
+        <!--------------------------------- Sponsors --------------------------------->
+
+        <div class="sponsors">
+            <p class="sponsors-headline">Our Sponsors</p>
+                <table class="sponsors-table" style="width:80%">
+                    <tr>
+                        <td><a href="https://www.thermofisher.com/us/en/home/brands/fisher-scientific.html" target="_blank"><img src="images/fisher.png" width="250px"></a></td>
+                        <td><a href="https://www.safeway.com/" target="_blank"><img src="images/safeway.jpg" width="250px"></a></td>
+                        <td><a href="https://buddhistchurchofoakland.org/bco-community/" target="_blank"><img src="images/church.png" width="250px"></a></td>
+                    </tr>
+                    <tr>    
+                        <td><a href="https://www.contracosta.edu/" target="_blank"><img src="images/contra.png" width="250px"></a></td>
+                        <td><a href="https://healthresearch.calpoly.edu/stride-community-2" target="_blank"><img src="images/stride.png" width="150px" height="130px"></a></td>
+                        <td><a href="https://www.kiwanisrichmondca.org/" target="_blank"><img src="images/kiwanis.png" width="200px"></a></td>
+                    </tr>
+                    <tr>    
+                            <td><a href="https://www.google.com/" target="_blank"><img src="images/google.png" width="250px"></a></td>
+                            <td><a href="https://www.pge.com/" target="_blank"><img src="images/pge.png" width="150px" height="130px"></a></td>
+                            <td><a href="http://www.ppdstore.com/blueflamepromotionalagency/start.jsp?aboutus=Y" target="_blank"><img src="images/blueflame.jpg" width="250px"></a></td>
+                    </tr>
+                </table>   
+        </div>
+
+
+        <div class="donate-page-bottom-text">
+            <p class="donate-two" style="color: #0198cf">R.E.A.C.H. West is a 501(c) 3 organization not-for-profit<br> services organization, 
+                ID #26-4462275</p>    
+        </div>
+
+
+        <!--------------------------------- Footer --------------------------------->
+
+        <section class="footer">
+            <div class="footer-container text-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>About us</h1>
+                        <p><a href="directors.html">Board of Directors</a></p>
+                        <p><a href="mission.html">Our Mission</a></p>
+                        <p><a href="ourstory.html">Our Story</a></p>
+                        <p><a href="contact.html">Contact us</a></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h1>Get Involved</h1>
+                        <p><a href="enrichment.html">Enrichment</a></p>
+                        <p><a href="programs.html">Programs</a></p>
+                        <p><a href="volunteer.html">Volunteer</a></p>
+                        <p><a href="donate.html">Donate</a></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h1>Follow Us On</h1>
+                        <p><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                        <p><a href="#"><i class="fa fa-instagram"></i> Instagram</a></p>
+                        <p><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></p>
+                        <p><a href="#"><i class="fa fa-twitter"></i> Twitter</a></p>
+                    </div>
+
+                    <div class="col-md-3 footer-image">
+                        <h2 style="color: #aaa">Reach West Organization</h2>
+                        <img src="images/logo.png" />
+                    </div>
+                </div>
+            </div>    
+                <hr />
+                <p class="copyright">© 2019 R.E.A.C.H. West Organization. Powered By <a href="http://fardad.us" class="frd">Fardad</p>
+        </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

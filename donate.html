@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+        <!--------------------------------- Navbar --------------------------------->
+
+    <div class="nav-bar" id="myDIV">
+            <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+            <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+            <ul class="big-navbar">
+                <li><a href="index.html" id="nav-hover" class="btnzade">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn btnzade" id="nav-hover">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="directors.html">Board of Directors</a>
+                            <a href="mission.html">Our Mission</a>
+                            <a href="memorial.html">Memorial</a>
+                        </div>
+                </li>
+                <li><a href="programs.html" id="nav-hover" class="btnzade">Programs</a></li>              
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn btnzade" id="nav-hover">Get Involved</a>
+                        <div class="dropdown-content">
+                            <a href="donate.html">Donate</a>
+                            <a href="volunteer.html">Volunteer</a>
+                        </div>
+                </li>
+                <li><a href="contact.html" id="nav-hover" class="btnzade">Contact Us</a></li>
+            </ul>
+
+        <!--------------------------------- Search Big Screen --------------------------------->
+
+        <form class="search-form" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+            <a href="https://paypal.com"><button id="donate-btn">DONATE</button></a>
+    </div>
+
+        <!--------------------------------- Navbar Small Screen --------------------------------->
+    
+            <nav class="navigation" id="navigation">
+                    <ul class="mainmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About Us</a>
+                            <ul class="submenu">
+                                <li><a href="directors.html">Board of Directors</a></li>
+                                <li><a href="mission.html">Our Mission</a></li>
+                                <li><a href="memorial.html">Memorial</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="programs.html">Programs</a>
+                        <li><a href="">Get Involver</a>
+                            <ul class="submenu">
+                                <li><a href="donate.html">Donate</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+        <!------------------------------ Donate Main ------------------------------->
+
+          <div class="donate-main-table">
+              <h1>Ways To Donate</h1>
+              <p class="donate-top-text">If you like to make a general donation to R.E.A.C.H. West, please use the following ways</p>
+                <div class="donate-table">
+                  <div id="donate-container">
+                    <a></a><div class="donate-table-column">
+                        <img src="images/paypal.jpg" /> 
+                        <h6>Donate through PayPal</h6>
+                        <p><br/><br/><br/><br/></p>
+                        <p><a  href="https://paypal.com"><button class="donate-page-button">Donate</button></a></p>
+                    </div></a>
+                  </div>  
+                    <a></a><div class="donate-table-column">
+                        <img src="images/amazonsmile.jpg"> 
+                        <h6>Donate by shopping at Amazon</h6>
+                        <p>Make R.E.A.C.H. West your designated charity every time you shop at AmazonSmile</p><br><br>
+                        <p><a  href="http://smile.amazon.com/ch/26-4462275"><button class="donate-page-button">Shop at Amazon</button></a></p>
+                    </div></a>
+                    <a></a><div class="donate-table-column">
+                        <img src="images/vdac.jpeg"> 
+                        <h6>Donate your car</h6>
+                        <p>Donate your car, truck, RV via this free, convenient service, and R.E.A.C.H. West will receive the proceeds</p><br>
+                        <p><a  href="https://www.v-dac.com/org/?id=26-4462275"><button class="donate-page-button">Donate</button></a></p>
+                    </div></a>
+                </div>
+
+
+      <!------------------------------- Sponsors Text ------------------------------>
+      
+        <div class="donate-page-sponsors-text">
+            <p>Thank you to our sponsors! Generous donations like yours enable us to transform our dreams into reality
+                through our R.E.A.C.H. West Enrichment programs, housing and community center initiatives.</p>
+        </div>
+
+      </div>
+
+
+      <!--------------------------------- Sponsors --------------------------------->
+
+        <div class="sponsors">
+            <p>Our Sponsors</p>
+                <table class="sponsors-table" style="width:80%">
+                    <tr>
+                        <td><a href="https://www.thermofisher.com/us/en/home/brands/fisher-scientific.html" target="_blank"><img src="images/fisher.png" width="250px"></a></td>
+                        <td><a href="https://www.safeway.com/" target="_blank"><img src="images/safeway.jpg" width="250px"></a></td>
+                        <td><a href="https://buddhistchurchofoakland.org/bco-community/" target="_blank"><img src="images/church.png" width="250px"></a></td>
+                    </tr>
+                    <tr>    
+                        <td><a href="https://www.contracosta.edu/" target="_blank"><img src="images/contra.png" width="250px"></a></td>
+                        <td><a href="https://healthresearch.calpoly.edu/stride-community-2" target="_blank"><img src="images/stride.png" width="150px" height="130px"></a></td>
+                        <td><a href="https://www.kiwanisrichmondca.org/" target="_blank"><img src="images/kiwanis.png" width="200px"></a></td>
+                    </tr>
+                    <tr>    
+                        <td><a href="https://www.google.com/" target="_blank"><img src="images/google.png" width="250px"></a></td>
+                        <td><a href="https://www.pge.com/" target="_blank"><img src="images/pge.png" width="150px" height="130px"></a></td>
+                        <td><a href="http://www.ppdstore.com/blueflamepromotionalagency/start.jsp?aboutus=Y" target="_blank"><img src="images/blueflame.jpg" width="250px"></a></td>
+                    </tr>
+                </table>    
+        </div>
+
+        <!------------------------------ Bottom Text ------------------------------>
+
+
+        <div class="donate-page-bottom-text">
+            <p class="donate-one">We thank you for your donation which will be used to further our mission 
+                and to bring more joy to the lives of people with disabilities.</p>
+            <p class="donate-two">R.E.A.C.H. West is a 501(c) 3 organization not-for-profit<br> services organization, 
+                ID #26-4462275<br>Your donations are tax-deductible to the full extent of the federal and state tax laws.</p>    
+        </div>
+       
+        
+        <!--------------------------------- Footer --------------------------------->
+
+        <section class="footer">
+            <div class="footer-container text-center">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h1>About us</h1>
+                        <p><a href="directors.html">Board of Directors</a></p>
+                        <p><a href="mission.html">Our Mission</a></p>
+                        <p><a href="ourstory.html">Our Story</a></p>
+                        <p><a href="contact.html">Contact us</a></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h1>Get Involved</h1>
+                        <p><a href="enrichment.html">Enrichment</a></p>
+                        <p><a href="programs.html">Programs</a></p>
+                        <p><a href="volunteer.html">Volunteer</a></p>
+                        <p><a href="donate.html">Donate</a></p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h1>Follow Us On</h1>
+                        <p><a href="#"><i class="fa fa-facebook-official"></i> Facebook</a></p>
+                        <p><a href="#"><i class="fa fa-instagram"></i> Instagram</a></p>
+                        <p><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></p>
+                        <p><a href="#"><i class="fa fa-twitter"></i> Twitter</a></p>
+                    </div>
+
+                    <div class="col-md-3 footer-image">
+                        <h1 style="color: #fff">Reach West Organization</h1>
+                        <img src="images/logo.png" />
+                    </div>
+                </div>
+            </div>    
+                <hr />
+                <p class="copyright">© 2019 R.E.A.C.H. West organization. Powered By <a href="http://fardad.us" class="frd">Fardad</p>
+        </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
